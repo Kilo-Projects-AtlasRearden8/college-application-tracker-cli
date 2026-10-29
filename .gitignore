@@ -1,21 +1,25 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.egg-info/
-*.egg
-dist/
-build/
-.eggs/
-
-# pytest
-.pytest_cache/
-.coverage
-htmlcov/
 
 # Local data
-data/*.json
-data/*.csv
-
 # OS
+# Python
+# pytest
+*$py.class
+*.egg
+*.egg-info/
+*.py[cod]
+*.pyc
 .DS_Store
+.coverage
+.eggs/
+.env
+.env.*
+.pytest_cache/
+.venv/
+__pycache__/
+build/
+data/*.csv
+data/*.json
+dist/
+dist/*.tmp
+htmlcov/
+node_modules/
