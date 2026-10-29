@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "college-tracker"
+version = "0.1.0"
+description = "Local-first Python CLI to track college applications: deadlines, requirements, essays, and recommendation letters."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+license = { text = "MIT" }
+
+[project.scripts]
+college-tracker = "college_tracker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["college_tracker*"]
